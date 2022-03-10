@@ -1,0 +1,151 @@
+// ---------- vars ----------
+// colors
+@color-primary: #3a7afe;
+@color-primary-hover: #6295fe;
+@color-info: #00afef;
+@color-success: #00c48f;
+@color-warning: #ff9f00;
+@color-danger: #f44336;
+@color-danger-hover: #f86d61;
+@color-disabled: #aaa;
+
+@color-text: #555;
+@color-text-main: #000;
+@color-text-sub: #888;
+@color-text-light: #fff;
+
+@color-border: #dbdee6;
+
+@color-bg: #ffffff;
+@color-bg-sub: #f5f5f5;
+// sizes
+@font-size-sm: 12px;
+@font-size-md: 14px;
+@font-size-lg: 16px;
+
+@space-xs: 4px;
+@space-sm: 8px;
+@space-md: 16px;
+@space-lg: 24px;
+// ----------  ----------
+
+.l-button {
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: @color-bg;
+  border: 1px solid @color-border;
+  border-radius: 4px;
+  outline: none;
+  transition: 0.1s;
+  -webkit-appearance: none;
+  font-size: @font-size-md;
+  color: @color-text-main;
+}
+.l-button + .l-button {
+  margin-left: @space-sm;
+}
+.l-button:hover,
+.l-button:focus {
+  border-color: @color-primary;
+  color: @color-primary;
+}
+.l-button.is-danger:hover,
+.l-button.is-danger:focus {
+  border-color: @color-danger;
+  color: @color-danger;
+}
+.l-button.is-disabled,
+.l-button.is-disabled:hover,
+.l-button.is-disabled:focus {
+  cursor: not-allowed;
+  border-color: @color-border;
+  color: @color-disabled;
+  opacity: .8;
+}
+
+// type: primary
+.l-button--primary {
+  border-color: @color-primary;
+  background-color: @color-primary;
+  color: @color-text-light;
+}
+.l-button--primary:hover,
+.l-button--primary:focus {
+  border-color: @color-primary-hover;
+  background-color: @color-primary-hover;
+  color: @color-text-light;
+}
+.l-button--primary.is-danger {
+  border-color: @color-danger;
+  background-color: @color-danger;
+}
+.l-button--primary.is-danger:hover,
+.l-button--primary.is-danger:focus {
+  border-color: @color-danger-hover;
+  background-color: @color-danger-hover;
+  color: @color-text-light;
+}
+.l-button--primary.is-disabled,
+.l-button--primary.is-disabled:hover,
+.l-button--primary.is-disabled:focus {
+  border-color: @color-primary-hover;
+  background-color: @color-primary-hover;
+  color: @color-text-light;
+}
+// type: text
+.l-button--text {
+  color: @color-primary;
+  border: transparent;
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+.l-button--text:hover,
+.l-button--text:focus {
+  color: @color-primary-hover;
+}
+.l-button--text.is-danger {
+  color: @color-danger;
+}
+.l-button--text.is-danger:hover,
+.l-button--text.is-danger:focus {
+  color: @color-danger-hover;
+}
+
+// sizes
+.l-button--small {
+  padding: 6px 12px;
+}
+.l-button--mini {
+  padding: 4px 10px;
+  font-size: @font-size-sm;
+}
+.l-button--large {
+  padding: 12px 16px;
+  font-size: @font-size-lg;
+}
+
+// round
+.l-button.is-round {
+  border-radius: 20px;
+}
+.l-button--normal.is-round {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.l-button--small.is-round {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.l-button--mini.is-round {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.l-button--large.is-round {
+  padding-left: 20px;
+  padding-right: 20px;
+}
