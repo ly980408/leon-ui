@@ -1,9 +1,17 @@
-# varlet-cli-app
+<div align="center">
+  <h1>Leon UI</h1>
+  <p>基于 Vue3 的PC端组件库</p>
+</div>
+
+---
+
+### 介绍
+-
 
 ### Reference
 
-[@varlet/cli 中文文档](https://github.com/varletjs/varlet/blob/dev/packages/varlet-cli/README.md)
-[@varlet/cli documentation](https://github.com/varletjs/varlet/blob/dev/packages/varlet-cli/README.en-US.md)
+项目采用 [@varlet/cli](https://github.com/varletjs/varlet/blob/dev/packages/varlet-cli/README.md) 工具进行搭建
+设计开发过程中参考 [Varlet](https://varlet.gitee.io/varlet-ui/)、[ElementPlus](https://element-plus.gitee.io/)
 
 ### Quickstart
 
