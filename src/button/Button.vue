@@ -22,7 +22,7 @@
 import { defineComponent, PropType } from 'vue'
 
 function typeValidator(type: string): boolean {
-  return ['default', 'primary', 'text'].includes(type)
+  return ['default', 'primary', 'dashed', 'text'].includes(type)
 }
 function sizeValidator(size: string): boolean {
   return ['mini', 'small', 'normal', 'large'].includes(size)
@@ -32,7 +32,7 @@ export default defineComponent({
   name: 'LButton',
   props: {
     type: {
-      type: String as PropType<'default' | 'primary' | 'text'>,
+      type: String as PropType<'default' | 'primary' | 'dashed' | 'text'>,
       default: 'default',
       validator: typeValidator
     },

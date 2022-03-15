@@ -7,10 +7,17 @@ import BasicUse from '../example/BasicUse'
 ```
 
 ```html
-<l-button>基本使用</l-button>
-<l-button type="primary">主要按钮</l-button>
-<l-button type="text">文字按钮</l-button>
-<l-button round>圆角按钮</l-button>
+<div>
+  <l-button>默认按钮</l-button>
+  <l-button type="primary">主要按钮</l-button>
+  <l-button type="dashed">虚线按钮</l-button>
+  <l-button type="text">文字按钮</l-button>
+</div>
+<div style="margin-top: 8px">
+  <l-button round>圆角按钮</l-button>
+  <l-button type="primary" round>主要按钮</l-button>
+  <l-button type="dashed" round>虚线按钮</l-button>
+</div>
 ```
 
 ### 禁用状态
@@ -21,6 +28,7 @@ import DisabledState from '../example/DisabledState'
 ```html
 <l-button disabled>基本使用</l-button>
 <l-button type="primary" disabled>主要按钮</l-button>
+<l-button type="dashed" disabled>虚线按钮</l-button>
 <l-button type="text" disabled>文字按钮</l-button>
 ```
 
@@ -34,6 +42,7 @@ import DangerState from '../example/DangerState'
 ```html
 <l-button danger>基本使用</l-button>
 <l-button type="primary" danger>主要按钮</l-button>
+<l-button type="dashed" danger>虚线按钮</l-button>
 <l-button type="text" danger>文字按钮</l-button>
 ```
 
@@ -58,6 +67,10 @@ import ButtonSize from '../example/ButtonSize'
 | --- | --- | --- | --- | --- | 
 | `type` | 类型 | _string_ | `default` / `primary` / `text` | `default` |
 | `size` | 尺寸 | _string_ | `normal` / `small` / `mini` / `large` | `normal` |
+| `round` | 是否圆角按钮 | _boolean_ | - | `false` |
+| `danger` | 是否危险状态 | _boolean_ | - | `false` |
+| `disabled` | 是否禁用状态 | _boolean_ | - | `false` |
+| `loading` | 是否加载状态 | _boolean_ | - | `false` |
 
 ### 事件
 
